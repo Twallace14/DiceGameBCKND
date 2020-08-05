@@ -1,10 +1,9 @@
 {
-  "name": "shyzu-server",
+  "name": "node",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
-   
-  "script": {
+  "scripts": {
     "start": "node server.js",
     "start:dev": "nodemon server.js"
   },
