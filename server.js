@@ -7,15 +7,13 @@ const bcrypt = require('bcrypt');
 const db = knex({
     client: 'pg',
     connection: {
-        host: '127.0.0.1',
-        database: 'shyzu-db'
+        connectionString: process.env.DATABASE_URL,
+        ssl: true,
 
     }
 });
 
-//db.select('*').from('users').then(data => {
-//    console.log(data);
-//});
+
 
 
 
@@ -23,7 +21,6 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors())
-
 
 app.get('/', (req, res) => {
     res.send("intial connect success");
