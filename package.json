@@ -4,11 +4,10 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-
     "start": "nodemon server.js",
     "start:dev": "nodemon server.js"
-
   },
+  
   "author": "",
   "license": "ISC",
   "dependencies": {
